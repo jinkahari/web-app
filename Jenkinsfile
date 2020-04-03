@@ -1,3 +1,4 @@
+currentBuild.displayName = "online-shopping-#"+currentBuild.number
 node{
    stage('SCM Checkout'){
       git 'https://github.com/jinkahari/web-app'

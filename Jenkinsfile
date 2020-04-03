@@ -1,5 +1,8 @@
 currentBuild.displayName = "online-shopping-#"+currentBuild.number
 node{
+   options {
+       buildDiscarder logRotator(daysToKeepStr: '5', numToKeepStr: '7')
+   }
    stage('SCM Checkout'){
       git 'https://github.com/jinkahari/web-app'
    }

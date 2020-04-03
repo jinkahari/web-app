@@ -1,8 +1,8 @@
 currentBuild.displayName = "online-shopping-#"+currentBuild.number
 node{
-   options {
-       buildDiscarder logRotator(daysToKeepStr: '5', numToKeepStr: '7')
-   }
+   //options {
+    //   buildDiscarder logRotator(daysToKeepStr: '5', numToKeepStr: '7')
+   //}
    Stages { 
     stage('SCM Checkout'){
       git 'https://github.com/jinkahari/web-app'
@@ -16,5 +16,4 @@ node{
       //Thanks,
       //Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'jinkahariforu@gmail.com'
    //}
-   } 
 }

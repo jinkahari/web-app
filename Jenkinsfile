@@ -6,10 +6,10 @@ node{
       def mvnHome = tool name: 'maven', type: 'maven'
       sh "${mvnHome}/bin/mvn clean package"
    }
-   stage('Email Notification'){
-      mail bcc: '', body: '''Hi Welcome to Jenkins email alerts
-      Thanks,
-      Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'jinkahariforu@gmail.com'
-   }
+   //stage('Email Notification'){
+     // mail bcc: '', body: '''Hi Welcome to Jenkins email alerts
+      //Thanks,
+      //Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'jinkahariforu@gmail.com'
+   //}
    
 }

@@ -3,7 +3,6 @@ node{
    //options {
     //   buildDiscarder logRotator(daysToKeepStr: '5', numToKeepStr: '7')
    //}
-   Stages { 
     stage('SCM Checkout'){
       git 'https://github.com/jinkahari/web-app'
     }

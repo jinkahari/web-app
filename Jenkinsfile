@@ -1,5 +1,7 @@
 currentBuild.displayName = "online-shopping-#"+currentBuild.number
-node{
+//node{
+pipeline {
+   agent any
    options {
        buildDiscarder logRotator(daysToKeepStr: '5', numToKeepStr: '7')
    }
